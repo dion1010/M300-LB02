@@ -1,25 +1,28 @@
+[**ZURÜCK**](../README.md)
+
 ## 30-Container
 
 ## Inhaltsverzeichnis 
+* 01 - [Container]
+* 02 - [Docker](#docker)
+* 03 - [Kubernetes](#kubernetes)
+* 04 - [Sicherheitsaspekte](#sicherheitsaspekte)
+* 05 - [Netzwerkplan](#netzwerkplan)
+* 06 - [Testing](#testing)
 
-* 01 - [Docker](#docker)
-* 02 - [Kubernetes](/20_Infrastruktur_automatisierung)
-* 03 - [30-Container](/30_Container/README.md)
-* 04 - [Persönlicher Wissensstand](#persönlicher-wissenstand)
-* 05 - [Schlusswort](#schlusswort)
+### Container
+[**Nach oben**](#30-container)
 
--   01 - Einstieg 
 
--   02 - Docker / Kubernetes Umsetzung 
-
--   03 - Sicherheitsaspekte 
-
--   04 - Abschluss 
 
 ### Docker
+[**Nach oben**](#30-container)
 
  
+
 ### Docker Befehle
+[**Nach oben**](#30-container)
+
 | Befehl       | Beschreibung                                       | 
 | ------------ | -------------------------------------------------- | 
 | `docker run`  | Führt ein Befehl in einem neuen Container aus      | 
@@ -30,52 +33,26 @@
 | `docker push`  | Ladet ein Image in die Registry hoch               | 
 | `docker exec`  | Führ einen Befehl in einem laufenden Container aus | 
 
- 
-
 ### Docker Volumes 
+[**Nach oben**](#30-container)
 
 Falls ein Verzeichnis innerhalb des Containers persistent gespeichert werden soll, muss dies speziell gekennzeichnet werden. Dies kann zum Beispiel wichtig sein, wenn man eine MySQL-Datenbank innerhalb eines Containers einsetzt. 
 
-
-### Netzwerkplan 
-
-    +---------------------------------------------------------------+ 
-    ! Container: Nginx Frontend Webserver - 34.65.185.255:80        ! 
-
-    ! Container: Python Flask Backend API - 34.65.90.233:8080       ! 
-
-    ! Container: MySQL Datenbank - Hostname: mysql - no public IP   ! 
-    +---------------------------------------------------------------+ 
-    ! Container-Engine: Docker                                      ! 
-    +---------------------------------------------------------------+ 
-    ! Kubernetes Umgebung Google Cloud (GKE) - 3 Node Cluster       ! 
-    +---------------------------------------------------------------+ 
-    ! Notebook macOS - Schulnetz 10.x.x.x                           ! 
-    +---------------------------------------------------------------+ 
-
- 
-
- 
-
-### Relevante Befehle 
-
- 
-
--   docker build -t fnoah/m300-lb02-web . 
-
--   docker push fnoah/m300-lb02-web 
+### Kubernetes
+[**Nach oben**](#30-container)
 
 
--   delete pod to update image 
 
- 
+### Sicherheitsaspekte
+[**Nach oben**](#30-container)
 
--   kubectl expose deployment hello-minikube --type=NodePort 
 
- 
 
--   kubectl exec -it web-deployment -- /bin/bash 
+### Netzwerkplan
+[**Nach oben**](#30-container)
 
- 
 
--   kubectl get services 
+
+### Testing
+[**Nach oben**](#30-container)
+
