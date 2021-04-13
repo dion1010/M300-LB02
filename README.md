@@ -11,8 +11,8 @@ Dies ist eine Dokumentation der LB02 im Modul 300. In dieser Dokumentation werde
 * 03 - [30-Container](/30_Container/README.md)
 * 04 - [35-Sicherheit](35_Sicherheit/README.md)
 * 05 - [40-Kubernetes](40_Kubernetes/README.md)
-* 04 - [Persönlicher Wissensstand](#persönlicher-wissenstand)
-* 05 - [Schlusswort](#schlusswort)
+* 06 - [Persönlicher Wissensstand](#persönlicher-wissenstand)
+* 07 - [Schlusswort](#schlusswort)
 
 ## Persönlicher Wissenstand
 
