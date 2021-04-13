@@ -40,25 +40,17 @@ Falls ein Verzeichnis innerhalb des Containers persistent gespeichert werden sol
 ### Netzwerkplan 
 
     +---------------------------------------------------------------+ 
-
     ! Container: Nginx Frontend Webserver - 34.65.185.255:80        ! 
 
     ! Container: Python Flask Backend API - 34.65.90.233:8080       ! 
 
     ! Container: MySQL Datenbank - Hostname: mysql - no public IP   ! 
-
     +---------------------------------------------------------------+ 
-
     ! Container-Engine: Docker                                      ! 
-
     +---------------------------------------------------------------+ 
-
     ! Kubernetes Umgebung Google Cloud (GKE) - 3 Node Cluster       ! 
-
     +---------------------------------------------------------------+ 
-
     ! Notebook macOS - Schulnetz 10.x.x.x                           ! 
-
     +---------------------------------------------------------------+ 
 
  
