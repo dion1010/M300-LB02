@@ -6,8 +6,8 @@
 * 01 - [Container](#container)
 * 02 - [Microservices](#microservices)
 * 03 - [Docker](#docker)
-* 04 - [Netzwerkplan](#netzwerkplan)
-* 05 - [Testing](#testing)
+* 04 - [Beispiele](#beispiele)
+
 
 ## Container
 [**Nach oben**](#30-container)
@@ -97,21 +97,5 @@ In dieser Registry werden die Images abgelegt.
 
 Falls ein Verzeichnis innerhalb des Containers persistent gespeichert werden soll, muss dies speziell gekennzeichnet werden. Dies kann zum Beispiel wichtig sein, wenn man eine MySQL-Datenbank innerhalb eines Containers einsetzt. 
 
-## Kubernetes
-[**Nach oben**](#30-container)
-
-
-
-## Sicherheitsaspekte
-[**Nach oben**](#30-container)
-
-
-
-## Netzwerkplan
-[**Nach oben**](#30-container)
-
-
-
-## Testing
-[**Nach oben**](#30-container)
+## Beispiele
 

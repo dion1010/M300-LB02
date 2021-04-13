@@ -9,6 +9,8 @@ Dies ist eine Dokumentation der LB02 im Modul 300. In dieser Dokumentation werde
 * 01 - [10-Toolumgebung](10_Toolumgebung)
 * 02 - [20-Infrastruktur-Automatisierung](/20_Infrastruktur_automatisierung)
 * 03 - [30-Container](/30_Container/README.md)
+* 04 - [35-Sicherheit](35_Sicherheit/README.md)
+* 05 - [40-Kubernetes](40_Kubernetes/README.md)
 * 04 - [Persönlicher Wissensstand](#persönlicher-wissenstand)
 * 05 - [Schlusswort](#schlusswort)
 
@@ -57,6 +59,7 @@ Mit Visual Studio Code habe ich bereits im vorhinein gearbeitet. Ich habe dies i
 Ein Grossen Teil meines Wissen habe ich in diesem Modul während der LB01 bekommen. Jedoch aber auch einen weiteren grossen Teil während der LB02. Hier habe ich spezifisch vorallem über die Container Virtualisierung viel mehr dazugelernt. Insbesondere im Zusammenhang mit Docker. Davor kannte ich Docker garnicht und ich wusste auch nicht was es genau macht. Jedoch habe ich dies nun kennengelernt während dieser Arbeit und kann es auch relativ gut verwenden. Kubernetes habe ich davor auch nicht gekannt. Jetzt aber kenne ich dies auch und ich kann auch damit arbeiten. Ich finde ich hab in dieser kurzen Zeit relativ viele Befehle gelernt und kann diese auch sehr gut beherschen.
 
 Im Allgemeinen werde ich auch immer besser mit meinen Markdowns. Ich lerne sehr viele Funktionen kennen und entwickle mich somit immer weiter.
+Ausserdem habe ich auch was die Systemsicherheit angeht viel neues dazugelernt. Ich denke dies wird mir sehr viel bringen auch in Zukunft, da ich bald in ein paar Monaten auch ins Security Team kommen werde in meinem Betrieb und somit schon bereits einiges an Vorwissen hab.
 
 ### Persönliche Lernentwicklung: Reflexion
 
