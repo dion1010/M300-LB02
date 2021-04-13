@@ -69,8 +69,12 @@ In dieser Registry werden die Images abgelegt.
 | `docker build` | Erstellt ein Image aus einem Docker-File           | 
 | `docker pull`  | Ladet ein Image aus der Registry                   | 
 | `docker push`  | Ladet ein Image in die Registry hoch               | 
-| `docker exec`  | Führ einen Befehl in einem laufenden Container aus | 
-
+| `docker exec`  | Führt einen Befehl in einem laufenden Container aus | 
+| `docker ps`    | Überblick über aktuelle Container                  |
+| `docker images`  | Lokale Images ausgeben | 
+| `docker rm`  | Entfernen von einen oder mehreren Container | 
+| `docker rmi`  | Löscht ein oder mehrere angegebene Images |  
+| `docker kill`  | Fast wie "docker stop" dem  | 
 ### Docker Volumes 
 [**Nach oben**](#30-container)
 
