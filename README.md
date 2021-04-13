@@ -16,6 +16,10 @@ Dies ist eine Dokumentation der LB02 im Modul 300. In dieser Dokumentation werde
 
 [**Nach oben**](#m300-services)
 
+## Container (Docker/Kubernetes)
+
+Mit Container Virtualisierung bin ich einmal in Berührung gekommen und dies im ÜK-Modul 340. Dort haben wir zum Beispiel mit Proxmox gearbeitet und dort gibt es ebenfalls Container Virtualisierung. Jeodch mit Docker oder Kubernetes kenne ich mich gar nicht aus und ich habe auch ehrlich gesagt davor nicht davon gehört. Jedoch will ich mir dieses Wissen aneignen, da ich denke, dass dies für die Zukunft etwas wichtig sein wird.
+
 ### Linux
 
 Mit Linux habe ich bereits etwas Erfahrung gemacht in den letzten Jahren. Am meisten habe ich mich mit der Distribution Ubuntu auseinandergesetzt. Ich habe auch schon sehr vieles auf den Ubuntu VM's konfiguriert, sowie auch kleinere Projekte gemacht. Mit weiteren Distirubtionen ausser Kali Linux bin ich ansosten nicht in Berührung gekommen.
@@ -26,15 +30,15 @@ Mit der Virtualisierung habe ich bereits etwas zu tun gehabt. Sehr oft habe ich 
 
 ### Vagrant
 
-Vagrant ist mir persönlich ein neuer Begriff und ich hatte davor nicht wirklich etwas damit zu tun. Ich weiss nicht mal genau für was man es verwendet, jedoch hoffe ich dieses Wissen mit dieser LB01 zu gewinnen.
+Mit Vagrant habe ich sehr viel in der LB01 gearbeitet und habe mir dort ein Grundwissen aufgebaut. Nun kann ich damit auch sehr gut ummgehen und ich kann es auch problemlos verwenden.
 
 ### Versionsverwaltung / Git
 
-Von Git oder auch Git-Hub habe ich bereits schon öfter gehört. Ich selber habe zwar damit noch nie gearbeitet und bin auch nie damit in Berührung gekommen. Jedoch denke ich, dass ich dies auch kennenlernen werde in dieser Arbeit.
+Git und Git-Hub bin ich nun auch viel näher gekommen. Ich kenne nun bereits einige Git-Befehle und weiss auch wie man damit arbeitet. Dieses Wissen habe ich mir während der LB01 in diesem Modul erarbeitet.
 
 ### Markdown
 
-Über Markdown wusste ich auch nichts. Ich war mich nicht sicher was es ist und was man da so machen kann. Und damit zu tun hatte ich im Vorfeld auch nicht.
+Mitlerweile kenne ich mich mit Markdowns sehr gut aus und es macht mir auch sehr viel spass damit zu dokumentieren. Es gibt noch die einen oder anderen Funktionen/Makros die ich noch nicht ganz behersche aber ansonsten komme ich gut damit klar.
 
 ### Systemsicherheit
 
@@ -42,7 +46,7 @@ Mit der Systemsicherheit von Systemen hatte ich bereits öfters zu tun. Dies in 
 
 ### Visual Studio Code
 
-Mit Visual Studio Code habe ich bereits im vorhinein gearbeitet. Ich habe dies in verschiedenen ÜK-Modulen, TBZ-Modulen sowie allgemein beim Scripting verwendet. Ich habe es auch bereits installiert und muss nur noch Add-Ons installieren dann sollte ich ready to go sein.
+Mit Visual Studio Code habe ich bereits im vorhinein gearbeitet. Ich habe dies in verschiedenen ÜK-Modulen, TBZ-Modulen sowie allgemein beim Scripting verwendet.
 
 ## Schlusswort
 
@@ -50,12 +54,10 @@ Mit Visual Studio Code habe ich bereits im vorhinein gearbeitet. Ich habe dies i
 
 ### Persönliche Lernentwicklung: Vergleich Vorwissen - Wissenszuwachs
 
-In der LB01 habe ich sehr viel neues Wissen dazu gewonnen. Ich bin in dieses Modul mit sehr wenig bis zu gar kein Wissen eingestiegen. Nun kann ich bereits vieles mehr und ich habe auch mein Wissen um einiges erweitern können. Mit Linux kannte ich mich bereits schon etwas aus und ich hatte auch schon viele Projekte damit gemacht. Dementsprechend konnte ich bereits ein Grossteil der Befehle die gebraucht wurden, jedoch habe ich auch wieder Befehle benutzt, die ich seit längerem nicht mehr verwendet habe (SSH Key generieren). Mit der Virtualisierung habe ich mich auch bereits etwas ausgekannt. Ich habe bereits mit vielen Hypervisor gearbeitet und habe somit etwas an Wissen angeeignet.
+Ein Grossen Teil meines Wissen habe ich in diesem Modul während der LB01 bekommen. Jedoch aber auch einen weiteren grossen Teil während der LB02. Hier habe ich spezifisch vorallem über die Container Virtualisierung viel mehr dazugelernt. Insbesondere im Zusammenhang mit Docker. Davor kannte ich Docker garnicht und ich wusste auch nicht was es genau macht. Jedoch habe ich dies nun kennengelernt während dieser Arbeit und kann es auch relativ gut verwenden. Kubernetes habe ich davor auch nicht gekannt. Jetzt aber kenne ich dies auch und ich kann auch damit arbeiten. Ich finde ich hab in dieser kurzen Zeit relativ viele Befehle gelernt und kann diese auch sehr gut beherschen.
 
-Ein ganz neues Umfeld für mich waren Github und Vagrant. Ich habe mit diesen zwei Produkten noch nie gearbeitet. Nun weiss ich bereits viel mehr. Ich habe sehr viele Vagrant Befehle erlernt und weiss nun auch wie man zum Beispiel ein Vagrantfile erstellen kann, dies bearbeiten, wie man VM's erstellt oder auch wie man Boxen oder auch so genannte "Hüllen" von der Vagrant Cloud herunterlädt. Dazu konnte ich auch diese Systeme dann wiederrum anhand von verschiedenen Tools sicher machen. Einiges davon kannte ich bereits, da ich dies auch schon im Vorhinein gemacht habe.
-
-Nicht zu vergessen ist natürlich auch das Markdown, welches auch Neugebiet für mich ist, da ich davor nichts damit zu tun hatte. Jedoch fand ich es spannend und habe mich sehr schnell dran gewöhnt. Naütlrich musste ich aber immer wieder nachgooglen wie man bestimmte Funtkonen macht, wie zum Beispiel: Tabelle, Inhaltsverzeichnis, Bilder hinzufügen, Command Line optik zum Text und vieles weiters.
+Im Allgemeinen werde ich auch immer besser mit meinen Markdowns. Ich lerne sehr viele Funktionen kennen und entwickle mich somit immer weiter.
 
 ### Persönliche Lernentwicklung: Reflexion
 
-Ich kann einfach sagen, dass mir das Modul bis jetzt sehr viel spass macht und ich bereits sehr viel neues Wissen dazu bekommen habe. Mir macht es vorallem Spass, da ich mich in ein Thema einarbeiten muss, mit de ich noch nie davor zu tun hatte. Ich lerne sehr viel neues somit und ich nehme auch neue Herausforderungen sehr gerne an. Ich bin in diesem Modul mit sehr wenig Vorwissen im Bereich Git und Vagrant eingestiegen. Sehr schnell  lernte ich aber diese zwei Tools kennen und konnte mich einarbeiten. Anfangs hatte ich etwas Probleme mit Vagrant. Da ich aus unerklärlichen Gründen ein Add-On hattek, welches das Aufsetzen von den Virtuellen Maschinen mti VirtualBox nicht erlaubte. Jedoch habe ich dies mit Hernn Kälin zusammen angeschaut und wir kontnen dies fixen. Von dort an lösste ich die Aufträge Stück für Stück und dokumentierte dies über das Markdown, welches auch ein neues Gebiet für mich war. Jedoch bin ich sehr Stolz auf meine Makrdowns, denn ich finde diese sind mir sehr gut gelungen.
+Die LB02 hat mir sehr viel spass gemacht. Ich habe mal wieder mit einem neuem Thema angefangen, welches ich garnicht kannte und ich konnte mir dieses Thema sehr gut beibringen und verstehen. Ich finde Herausforderungen immer wieder gut und da dies auch so ein wichtiges Thema in der Zukunft sein wird, finde ich es um so wichtiger, dass so ein Thema in der Berufsschule angesprochen wird. Probleme hatte ich zwar trotzdem welche am Anfang. Dies weil ich erst alles kennen lernen musste und somit noch etwas Schwierigkeiten hatte Anfangs das ganze zu verstehen. Aber ansonsten lief alles gut und ich kam auch sehr gut voran.
