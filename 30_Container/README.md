@@ -6,10 +6,8 @@
 * 01 - [Container](#container)
 * 02 - [Microservices](#microservices)
 * 03 - [Docker](#docker)
-* 04 - [Kubernetes](#kubernetes)
-* 05 - [Sicherheitsaspekte](#sicherheitsaspekte)
-* 06 - [Netzwerkplan](#netzwerkplan)
-* 07 - [Testing](#testing)
+* 04 - [Netzwerkplan](#netzwerkplan)
+* 05 - [Testing](#testing)
 
 ## Container
 [**Nach oben**](#30-container)
