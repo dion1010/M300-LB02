@@ -106,17 +106,17 @@ Dies kann zum Beispiel wichtig sein, wenn man eine MySQL-Datenbank innerhalb ein
 
 ### Build Image:
 
-![Apache Build Image](/Bilder_Markdown/apachebuild.jpg)
-![Mysql Build Image](/Bilder_Markdown/mysqlbuild.jpg)
+![Apache Build Image](Bilder_Markdown/apachebuild.jpg)
+![Mysql Build Image](Bilder_Markdown/mysqlbuild.jpg)
 
 ### Container erstellen & starten:
 
-![Apache Run Image](/Bilder_Markdown/apachebuild.jpg)
-![Mysql Run Image](/Bilder_Markdown/mysqlrun.jpg)
+![Apache Run Image](Bilder_Markdown/apachebuild.jpg)
+![Mysql Run Image](Bilder_Markdown/mysqlrun.jpg)
 
 ### Volume erstellen
 
-![presistent Volume](/Bilder_Markdown/presistentvolume.jpg)
+![presistent Volume](Bilder_Markdown/presistentvolume.jpg)
 
 Dies kann man dann entweder Im Dockerfile angeben oder mann kann es auch beim run Befehl mit der "-v" Option mitgeben.
 Für Beispiel im Dockerfile siehe die Dockerfiles weiter unten.
@@ -198,4 +198,4 @@ CMD ["mysqld"]
 
 Zugriff auf Webserver testen:
 
-![Apaache Test](/Bilder_Markdown/apachetest.jpg)
+![Apaache Test](Bilder_Markdown/apachetest.jpg)
