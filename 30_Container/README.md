@@ -106,15 +106,96 @@ Dies kann zum Beispiel wichtig sein, wenn man eine MySQL-Datenbank innerhalb ein
 
 ### Build Image:
 
-[Verzeichnis erstellen](apchebuild.jpg)
+[Apache Build Image](Bilder_Markdown/apachebuild.jpg)
+[Mysql Build Image](Bilder_Markdown/mysqlbuild.jpg)
 
 ### Container erstellen & starten:
 
-
+[Apache Run Image](Bilder_Markdown/apachebuild.jpg)
+[Mysql Run Image](Bilder_Markdown/mysqlrun.jpg)
 
 ### Volume erstellen
 
+[presistent Volume](Bilder_Markdown/presistentvolume.jpg)
 
+Dies kann man dann entweder Im Dockerfile angeben oder mann kann es auch beim run Befehl mit der "-v" Option mitgeben.
+Für Beispiel im Dockerfile siehe die Dockerfiles weiter unten.
 
 ## Dockerfiles
 
+### Apache Webserver 
+
+```Shell
+#Apache Umgebung
+#Dion Aziri
+
+FROM ubuntu:14.04
+MAINTAINER Dion Aziri
+
+RUN apt-get update
+
+# Apache Installation
+RUN apt-get -q -y install apache2 
+
+# Konfiguration Apache
+ENV APACHE_RUN_USER www-data
+ENV APACHE_RUN_GROUP www-data
+ENV APACHE_LOG_DIR /var/log/apache2
+
+# Übergeordnetes Verzeichnis erstellen
+RUN mkdir -p /var/lock/apache2 /var/run/apache2
+
+
+#phpMyadmin promt-Config
+RUN echo 'phpmyadmin phpmyadmin/dbconfig-install boolean true' | debconf-set-selections
+RUN echo 'phpmyadmin phpmyadmin/app-password-confirm password lb02dion' | debconf-set-selections
+RUN echo 'phpmyadmin phpmyadmin/mysql/admin-pass password lb02dion' | debconf-set-selections
+RUN echo 'phpmyadmin phpmyadmin/mysql/app-pass password lb02dion' | debconf-set-selections
+RUN echo 'phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2' | debconf-set-selections
+
+
+#phpMyadmin Installation
+RUN sudo apt-get -y install phpMyadmin
+
+EXPOSE 80
+
+VOLUME /var/www/html
+
+CMD /bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"
+```
+
+### Mysql Server
+
+```Shell
+#MySQL Umgebung
+#Dion Aziri
+FROM ubuntu:14.04
+
+MAINTAINER Dion Aziri
+
+
+#Befehle für mysql-server
+RUN echo 'mysql-server mysql-server/root_spassword password lb02dion' | debconf-set-selections 
+RUN echo 'mysql-server mysql-server/root_password_again password lb02dion' | debconf-set-selections 
+
+# Installation mysql
+RUN apt-get update
+RUN apt-get install -y mysql-server
+
+
+#Port öffnen
+RUN sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
+
+
+EXPOSE 3306
+
+VOLUME mysql:/var/lib/mysql
+
+CMD ["mysqld"]
+```
+
+## Testing
+
+Zugriff auf Webserver testen:
+
+[Apaache Test](Bilder_Markdown/apachetest.jpg)
