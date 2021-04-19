@@ -33,6 +33,8 @@ Denn klassischen Weg der Softwareentwicklung nennt man "monolithischer" Weg.
 ## Docker
 [**Nach oben**](#30-container)
 
+Docker ist eine Weiterentwicklung von der Linux-Containertechnologie. Hauptsächlich besteht die Docker-Plattform aus zwei Komponenten. Einmal dem Docker-Engine (Erstellen & Ausführen von Container) und dem Docker-Hub (Cloud Service für Cointainer Images).
+
 ### Docker-Architektur
 
 ### Docker Deamon
@@ -54,7 +56,7 @@ Ist ein ausgeführes Image. Dieses Image kann so oft man will als Containers aus
 
 ### Docker Registry
 
-In dieser Registry werden die Images abgelegt.
+In dieser Registry werden die Images abgelegt. Standard Registry wie am Anfang beschrieben ist Docker-Hub mit sehr vielen Container-Images. Vorteil von privaten Registries ist einfach, dass man weniger Auslastung hat, da man zum Beispiel jeweils den Download eines Images von der Cloud ausläst.
 
 ### Docker Befehle
 [**Nach oben**](#30-container)
@@ -75,6 +77,7 @@ In dieser Registry werden die Images abgelegt.
 | `docker kill`  | Fast wie "docker stop" dem  | 
 
 ### Dockerfile Hilfe
+[**Nach oben**](#30-container)
 
 | Anweisung    | Erklärung 
 | ------------ | ----------------------------------------------------------------------------------------- | 
@@ -95,7 +98,9 @@ In dieser Registry werden die Images abgelegt.
 ### Docker Volumes 
 [**Nach oben**](#30-container)
 
-Falls ein Verzeichnis innerhalb des Containers persistent gespeichert werden soll, muss dies speziell gekennzeichnet werden. Dies kann zum Beispiel wichtig sein, wenn man eine MySQL-Datenbank innerhalb eines Containers einsetzt. 
+Falls ein Verzeichnis innerhalb des Containers persistent gespeichert werden soll, muss dies speziell gekennzeichnet werden. 
+Dies kann zum Beispiel wichtig sein, wenn man eine MySQL-Datenbank innerhalb eines Containers einsetzt. 
 
 ## Beispiele
 [**Nach oben**](#30-container)
+
