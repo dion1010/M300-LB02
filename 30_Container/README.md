@@ -7,6 +7,8 @@
 * 02 - [Microservices](#microservices)
 * 03 - [Docker](#docker)
 * 04 - [Beispiele](#beispiele)
+* 05 - [Testing](#testing)
+* 06 - [Image-Bereitstellung](#image-bereitstellung)
 
 
 ## Container
@@ -199,3 +201,23 @@ CMD ["mysqld"]
 Zugriff auf Webserver testen:
 
 ![Apaache Test](Bilder_Markdown/apachetest.jpg)
+
+## Image-Bereitstellung mit Docker-Hub
+[**Nach oben**](#30-container)
+
+Bevor man überhaupt starten kann muss man sich mit einem erstellten User-Account auf Docker-Hub registrieren und sich dann auch mit dem einloggen:
+
+![Tag Image](Bilder_Markdown/ib1.jpg)
+
+Zuerst muss man das Image taggen. Anschliessend kann man es mittels "push" hochladen:
+
+![Image hochladen](Bilder_Markdown/ib2.jpg)
+
+Jetzt kann man auf "https://hub.docker.com/" gehen und dort dann seine Repositorys ansehen:
+
+
+![Repo anschauen](Bilder_Markdown/ib3.jpg)
+
+Und zu guter letzt kann man noch folgendermassen ein Image wieder herunterladen:
+
+![Image herunterladen](Bilder_Markdown/ib4.jpg)
