@@ -76,7 +76,10 @@ Grundsätze:
 * Redundanz
 * Automatisiertes Reporting
 
-### Travis Ci
+## Beispiele
+[**Nach oben**](#35-sicherheit)
+
+### Travis Ci / Continious Integration
 
 Auf folgenden Link: `https://travis-ci.com/`
 
@@ -100,9 +103,6 @@ In diesem File kann man dann jeweils die Builds machen...kleines Beispiel:
 git:
   clone: false
 ```
-
-## Beispiele
-[**Nach oben**](#35-sicherheit)
 
 ## Monitoring mit cAdvisor
 
