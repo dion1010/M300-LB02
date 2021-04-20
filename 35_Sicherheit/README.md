@@ -76,11 +76,42 @@ Grundsätze:
 * Redundanz
 * Automatisiertes Reporting
 
-## Beispiele
-[**Nach oben**](#35-sicherheit)
-
-## Travis Ci
+### Travis Ci
 
 Auf folgenden Link: `https://travis-ci.com/`
 
 Nun auf Sign up > mit Github Konto einloggen > Authorize Travis CI
+
+Nun muss man wie im folgenden Screenshot, auf die grüne Schaltfläche, wo "Activate" drauf steht drücken:
+
+![Travis Ci](Bilder_Markdown/travisci1.jpg)
+
+Jetzt kann man noch auswählen welches Repository davon betroffen ist:
+
+![Travis Ci](Bilder_Markdown/travisci2.jpg)
+
+Nun muss man im Repository ein File erstellen und dies folgendermassen beschriften:
+
+![Travis Ci](Bilder_Markdown/travisci4.jpg)
+
+In diesem File kann man dann jeweils die Builds machen...kleines Beispiel:
+
+```Shell
+git:
+  clone: false
+```
+
+## Beispiele
+[**Nach oben**](#35-sicherheit)
+
+## Monitoring mit cAdvisor
+
+Der cAdvisor ermöglicht es den Containernutzern ein Verständnis der Ressourcennutzung und der Leistungsmerkmale ihrer laufenden Container. cAdvisor ist ein laufender Daemon, welcher Informationen über die Auslastung der Container sammelt, diese verarbeitet und am Schluss wieder ausgibt.
+
+Installieren kann man das ganze mit dem folgenden Befehl:
+
+![cAdvisor Installation](Bilder_Markdown/cadvisor.jpg)
+
+Und dies kann danach so aussehen:
+
+![cAdvisor Endprodukt](Bilder_Markdown/cadvisorendprodukt.jpg)
