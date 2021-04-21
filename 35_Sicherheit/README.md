@@ -104,6 +104,10 @@ git:
   clone: false
 ```
 
+So kann es dann aussehen im WebGUI, sollte es aber nicht, da dies eine nicht so ganz korrekte Ausgabe ist:
+
+![Travis Ci](Bilder_Markdown/travisci5.jpg)
+
 ## Monitoring mit cAdvisor
 
 Der cAdvisor ermöglicht es den Containernutzern ein Verständnis der Ressourcennutzung und der Leistungsmerkmale ihrer laufenden Container. cAdvisor ist ein laufender Daemon, welcher Informationen über die Auslastung der Container sammelt, diese verarbeitet und am Schluss wieder ausgibt.

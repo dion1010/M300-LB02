@@ -211,37 +211,31 @@ RUN sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysq
 
 EXPOSE 3306
 
-VOLUME mysql:/var/lib/mysql
+VOLUME mysql:/var/lib/mysql --> Dies wäre das presistent Volume (mit option -v kann man dies beim Docker run auch mitgeben)
 
 CMD ["mysqld"]
 ```
 
-## Testing
+## Beispiel Ticketingsystem
 
-Zugriff auf Webserver testen:
+Damit man überhaupt richtig anfangen kann, braucht man zuerst das richtige Image. Dafür lädt man sich folgendes Image vom Docker-Hub herunter:
 
-![Apaache Test](Bilder_Markdown/apachetest.jpg)
+```Shell
+docker pull zammad/zammad
+```
 
-Zugriff auf phpmyadmin testen:
+Anschliessend erstellt man den Container:
 
+```Shell
+docker container run --rm --name zammad -p 8082:80 zammad/zammad
+```
 
+Anschliessend kann man auch schon über das WebGUI zugreifen.
 
-## Image-Bereitstellung mit Docker-Hub
-[**Nach oben**](#30-container)
+Landing Page:
 
-Bevor man überhaupt starten kann muss man sich mit einem erstellten User-Account auf Docker-Hub registrieren und sich dann auch mit dem einloggen:
+![TSystem Landing Page](Bilder_Markdown/tsystem1.jpg)
 
-![Tag Image](Bilder_Markdown/ib1.jpg)
+Nach dem Konfigurieren:
 
-Zuerst muss man das Image taggen. Anschliessend kann man es mittels "push" hochladen:
-
-![Image hochladen](Bilder_Markdown/ib2.jpg)
-
-Jetzt kann man auf "https://hub.docker.com/" gehen und dort dann seine Repositorys ansehen:
-
-
-![Repo anschauen](Bilder_Markdown/ib3.jpg)
-
-Und zu guter letzt kann man noch folgendermassen ein Image wieder herunterladen:
-
-![Image herunterladen](Bilder_Markdown/ib4.jpg)
+![presistent Volume](Bilder_Markdown/tsystem2.jpg)
