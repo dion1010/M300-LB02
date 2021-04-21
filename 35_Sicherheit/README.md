@@ -61,6 +61,47 @@ Wichtigste Punkte für die Absicherung:
   * Nur Intern für andere Container erreichbar
 * Binaries entfernen
 
+### Beispiele Container absichern
+[**Nach oben**](#35-sicherheit)
+
+Hier werde ich nun drei Beispiele zeigen um die Container sicherer zu machen:
+
+### ReadOnly Container
+
+Man kann einem Container die Read Only Option mitgeben, sodass man dann am Dateisystem keine Änderungen mehr vornehmen kann:
+
+![Read Only Container](Bilder_Markdown/containerreadonly.jpg)
+
+Testen kann man das ganze folgendermassen:
+
+![Read Only Container](Bilder_Markdown/testreadonly.jpg)
+
+### Beispiel non-root Container
+
+In diesem Beispiel möchte ich zeigen wie man einen Container starten kann ohne, dass man direkt als root angemeldet ist.
+Dafür muss man am Schluss des Dockerfiles folgendes noch angeben:
+
+```Shell
+# Non Root User
+RUN useradd -ms /bin/bash dion
+USER dion
+WORKDIR /homedion
+```
+
+Wenn man dann sich auf den Container einloggt, wird man automatisch als User eingeloggt, denn man weiter oben definiert hat.
+
+![Read Only Container](Bilder_Markdown/nonroot.jpg)
+
+### Neustarts begrenzen
+
+Hierfür braucht man nur eine simple Option beim erstellen des Containers. Nömlich die "--restart" Option
+
+Hier noch ein Beispiel:
+
+```Shell
+$ docker run -d -t --restart=on-failure:4 --name testrestart ubuntu
+```
+
 ## Kontinuierliche Integration
 [**Nach oben**](#35-sicherheit)
 
