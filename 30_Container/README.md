@@ -6,9 +6,9 @@
 * 01 - [Container](#container)
 * 02 - [Microservices](#microservices)
 * 03 - [Docker](#docker)
-* 04 - [Beispiele](#beispiele)
-* 05 - [Testing](#testing)
-* 06 - [Image-Bereitstellung](#image-bereitstellung)
+* 04 - [Image-Bereitstellung](#image-bereitstellung)
+* 05 - [Beispiele](#beispiele)
+* 06 - [Testing](#testing)
 
 
 ## Container
@@ -102,6 +102,26 @@ In dieser Registry werden die Images abgelegt. Standard Registry wie am Anfang b
 
 Falls ein Verzeichnis innerhalb des Containers persistent gespeichert werden soll, muss dies speziell gekennzeichnet werden. 
 Dies kann zum Beispiel wichtig sein, wenn man eine MySQL-Datenbank innerhalb eines Containers einsetzt. 
+
+## Image-Bereitstellung mit Docker-Hub
+[**Nach oben**](#30-container)
+
+Bevor man überhaupt starten kann muss man sich mit einem erstellten User-Account auf Docker-Hub registrieren und sich dann auch mit dem einloggen:
+
+![Tag Image](Bilder_Markdown/ib1.jpg)
+
+Zuerst muss man das Image taggen. Anschliessend kann man es mittels "push" hochladen:
+
+![Image hochladen](Bilder_Markdown/ib2.jpg)
+
+Jetzt kann man auf "https://hub.docker.com/" gehen und dort dann seine Repositorys ansehen:
+
+
+![Repo anschauen](Bilder_Markdown/ib3.jpg)
+
+Und zu guter letzt kann man noch folgendermassen ein Image wieder herunterladen:
+
+![Image herunterladen](Bilder_Markdown/ib4.jpg)
 
 ## Beispiele Apache Webserver & Mysql Server
 [**Nach oben**](#30-container)
@@ -201,6 +221,10 @@ CMD ["mysqld"]
 Zugriff auf Webserver testen:
 
 ![Apaache Test](Bilder_Markdown/apachetest.jpg)
+
+Zugriff auf phpmyadmin testen:
+
+
 
 ## Image-Bereitstellung mit Docker-Hub
 [**Nach oben**](#30-container)
