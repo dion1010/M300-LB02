@@ -136,12 +136,19 @@ Und zu guter letzt kann man noch folgendermassen ein Image wieder herunterladen:
 ![Apache Run Image](Bilder_Markdown/apacherun.jpg)
 ![Mysql Run Image](Bilder_Markdown/mysqlrun.jpg)
 
-### Volume erstellen
+### Volume
+
+So erstellt man dann ein Volume:
 
 ![presistent Volume](Bilder_Markdown/presistentvolume.jpg)
 
+Und anschliessend kann man auch alle Infos anzeigen lassen:
+
+![presistent Volume Info](Bilder_Markdown/presistentvolumeinfo.jpg)
+
+'NOTE'
 Dies kann man dann entweder Im Dockerfile angeben oder mann kann es auch beim run Befehl mit der "-v" Option mitgeben.
-Für Beispiel im Dockerfile siehe die Dockerfiles weiter unten.
+Für Beispiel im Dockerfile siehe das "mysql" Dockerfile weiter unten.
 
 ## Dockerfiles
 [**Nach oben**](#30-container)
