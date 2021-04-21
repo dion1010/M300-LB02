@@ -146,7 +146,7 @@ Und anschliessend kann man auch alle Infos anzeigen lassen:
 
 ![presistent Volume Info](Bilder_Markdown/presistenvolumeinfo.jpg)
 
-'NOTE'
+### NOTE
 Dies kann man dann entweder Im Dockerfile angeben oder mann kann es auch beim run Befehl mit der "-v" Option mitgeben.
 Für Beispiel im Dockerfile siehe das "mysql" Dockerfile weiter unten.
 
