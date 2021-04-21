@@ -100,13 +100,49 @@ Nun muss man im Repository ein File erstellen und dies folgendermassen beschrift
 In diesem File kann man dann jeweils die Builds machen...kleines Beispiel:
 
 ```Shell
-git:
-  clone: false
+language: node_js
+node_js:
+ - "node"
 ```
 
-So kann es dann aussehen im WebGUI, sollte es aber nicht, da dies eine nicht so ganz korrekte Ausgabe ist:
+Nun muss man noch zwei3 weitere Files erstellen, die wir für dieses Beispiel brauchen:
 
-![Travis Ci](Bilder_Markdown/travisci5.jpg)
+## hello.js
+
+Der Inhalt dieser Datei muss folgendermassen aussehen:
+
+```Shell
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello Travis!\n'); // build should pass now!
+}).listen(1337, '127.0.0.1');
+console.log('Server running at http://127.0.0.1:1337/');
+```
+
+## package.json
+
+Und in diesem JSON File braucht es noch folgenden Inhalt:
+
+```Shell
+{
+    "name": "learn-travis-YOURNAME",
+    "description": "Simple Travis-CI check for JSHint (Code Linting)",
+    "author": "your name here :-)",
+    "version": "0.0.1",
+    "devDependencies": {
+      "jshint": "^2.6.0"
+    },
+    "scripts": {
+      "test": "jshint hello.js"
+    }
+  }
+```
+
+Im WebGUI kann man dann sehen ob der Build erfolgreich war oder nicht...die ersten paar tests waren nicht erfolgreich, da ich dort einen anderen Build probiert habe.
+Nichts desto trotz sollte es folgendermassen aussehen:
+
+![Travis Ci](Bilder_Markdown/travisci.jpg)
 
 ## Monitoring mit cAdvisor
 
