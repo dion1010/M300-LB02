@@ -7,7 +7,7 @@
 * 02 - [Kubernetes](#kubernetes)
 * 03 - [Befehle](#befehle)
 * 04 - [Beispiele](#beispiele-yaml-files-für-phpmyadmin-prjekt)
-* 
+
 ## Grundbegriffe
 [**Nach oben**](#40-kubernetes)
 
